@@ -1,17 +1,10 @@
-//Stack의 구현
-//is_empty, is_full
-//1차원 배열 Stack[]
-//가장 최근에 입력된것은 top변수
-//가장 먼저 들어온 요소는 stack[0], 마지막은 stack[top]
-//공백상태의 스택 = top - 1
-//is_empty(스택이 비어있는지 확인)
-is_empty(s)
-if top = -1;
-  them return TURE;
-  else return FALSE;
-  
-//is_full(스택이 차있는지 확인)
-is_full(s)
-if top = (MAX_STACK_SIZE-1)
-  them return TURE;
-  else return FALSE;
+# Stack의 구현
+스택의 특징 및 구조
+LIFO(LastInFirstOut)
+'''c
+create(size) //최대 크기가 size인 공백 스택을 생성한다
+is_empty(s) //스택이 비어있는지 검사한다
+is_pull(s) //스택이 가득 찼는지 검사한다
+push(s, item) //스택의 맨 위에 item을 추가한다
+pop(s) //스택의 맨 위에 있는 원소를 삭제한다
+peek(s) //스택의 맨 위에 있는 원소를 삭제하지 않고 반환한다
