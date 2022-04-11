@@ -1,6 +1,6 @@
-# Stack의 구현
-스택의 특징 및 구조
+# 스택의 특징 및 구조
 LIFO(LastInFirstOut)
+
 ```
 create(size) //최대 크기가 size인 공백 스택을 생성한다
 is_empty(s) //스택이 비어있는지 검사한다
@@ -9,3 +9,50 @@ push(s, item) //스택의 맨 위에 item을 추가한다
 pop(s) //스택의 맨 위에 있는 원소를 삭제한다
 peek(s) //스택의 맨 위에 있는 원소를 삭제하지 않고 반환한다
 ``` 
+
+# Stack의 용도
+입력과 역순의 출력이 필요한 경우
+1. Editor에서 Undo기능
+2. 함수호출에서 복귀주소를 기억
+
+#Stack의 구현
+1차원 배열 Stack[]
+스택에서 가장 최근에 입력되었던 자료를 가리키는 top변수
+가장 먼저 들어온 요소는 stack[0], 가장 최근에 들어온 요소는 stack[top]에 저장
+스택이 공백상태면 top - 1
+
+#is_empty(스택이 비어있는지 확인)
+```
+is_ empty(s)
+if top = -1
+  them return TRUE
+  else return FALSE
+```
+
+#is_full(스택이 차있는지 확인)
+```
+if_top = (MAX_STACK_SIZE-1)
+  then return TURE
+  else RETURN FALSE
+```
+
+#push연산
+```
+push (S, x)
+if is_full(s)
+  then error"OverFlow"
+  else {
+  top +=1
+  stack[top] = x
+  }
+```
+
+#pop연산
+```
+pop (S, x)
+if is_empty(s)
+  then error"UnderFlow"
+  else e<-stack[top]
+  top -=1
+  return e
+```
