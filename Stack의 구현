@@ -1,0 +1,17 @@
+//Stack의 구현
+//is_empty, is_full
+//1차원 배열 Stack[]
+//가장 최근에 입력된것은 top변수
+//가장 먼저 들어온 요소는 stack[0], 마지막은 stack[top]
+//공백상태의 스택 = top - 1
+//is_empty(스택이 비어있는지 확인)
+is_empty(s)
+if top = -1;
+  them return TURE;
+  else return FALSE;
+  
+//is_full(스택이 차있는지 확인)
+is_full(s)
+if top = (MAX_STACK_SIZE-1)
+  them return TURE;
+  else return FALSE;
